@@ -1,4 +1,4 @@
-# GcodeSimulator
+# GcodeSimulator 1.0
 This is a Blender Add-on for 3D concrete printers to import the Gcode file and cross examining the bounds of workspace.
 
 Currently supports only G0 and G1 commands only.
