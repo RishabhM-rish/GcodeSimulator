@@ -11,9 +11,11 @@ class VolReq(Operator):
     bl_label = "Find approx volume of material required"
     
     def execute(self, context):
+        hfac = bpy.context.scene.sample_vars.L_height
+        lfac = bpy.context.scene.sample_vars.Thick
         curve = bpy.context.object
         curveLength = sum(s.calc_length() for s in curve.data.splines)
-        req_vol = curveLength * 100 * 40 * 25 / 1000000
+        req_vol = curveLength * 100 * hfac * lfac / 1000000
         global req_vol_str
         req_vol_str = str(req_vol)
         return {'FINISHED'}
