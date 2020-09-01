@@ -23,8 +23,7 @@ bl_info = {
     "blender": (2, 80, 2),
     "location": "File > Import> Gcode (.gcode) ",
     "description": "Simulating Gcodes for 3D concrete printing",
-    "wiki_url": "",
-    "tracker_url": "",
+    "wiki_url": "https://github.com/RishabhM-rish/GcodeSimulator/blob/master/README.md",
     "category": "3D View",
 }
 
